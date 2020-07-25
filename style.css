@@ -1,0 +1,148 @@
+/* #f6d361, #fda085 */
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center !important;
+  align-items: center !important;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 500% 100%;
+  animation: gradient 15s ease infinite;
+}
+.animation {
+  animation: fullpageanime 1s ease 1;
+}
+
+main {
+  width: 60% !important;
+  margin-left: auto;
+  margin-right: auto;
+  height: 655px !important;
+  background: transparent;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+.main-div {
+  background-color: #e4e4e1;
+  background-image: radial-gradient(
+      at top center,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(0, 0, 0, 0.03) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(143, 152, 157, 0.6) 100%
+    );
+  background-blend-mode: normal, multiply;
+  background-blend-mode: screen;
+  padding: 1em;
+  margin-top: 10px;
+}
+header {
+  text-align: center;
+  animation-name: title;
+  color: #dfe9f3;
+  font-size: 3rem !important;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+h1 {
+  font-size: 1.5em !important;
+}
+
+.icon1 {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #f6d361;
+}
+.icon2 {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fda085;
+}
+.input {
+  font-size: 1.4rem;
+  border-radius: 10%;
+  outline: none;
+  opacity: 0.8;
+  border: none;
+  padding: 0.4em;
+  width: 60% !important;
+  margin-top: 1em;
+}
+.add-del {
+  margin-left: 5px;
+}
+.todo {
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  font-weight: bolder;
+}
+.li {
+  color: #1d8fe1 !important;
+  animation: todoanime 3s ease 1;
+}
+.delbtn,
+.editbtn {
+  padding: 5px !important;
+  color: #fda085;
+
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+/* KeyFrames */
+@keyframes fullpageanime {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes todoanime {
+  0% {
+    margin-left: -500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes title {
+  0% {
+    margin-left: -550px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    margin-left: -250px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+/* KeyFrames */
